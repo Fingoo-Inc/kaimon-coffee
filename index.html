@@ -2,21 +2,19 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kaimon coffee</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./styles/common.css" />
-  <link rel="stylesheet" href="./styles/front-page.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.2.4/src/css/preflight.css">
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/front-page.css">
 </head>
 
 <body>
-  <div>
+  <div class="page">
     <header class="site-header">
-      <a class="brand" href="/"><img src="./images/common/brand.svg" width="238" height="40" alt="kaimon coffee" /></a>
+      <a class="brand" href="/"><img src="./images/common/brand.svg" width="238" height="40" alt="kaimon coffee"></a>
       <div class="header-links">
         <a class="link" href="">ホーム</a>
         <a class="link" href="">わたしたちについて</a>
@@ -26,11 +24,38 @@
     <main class="site-main">
       <div class="hero">
         <h1 class="hero-title">
-          エシカルな<br class="break" />コーヒーと<br />
+          エシカルな<br class="break">コーヒーと<br>
           ともに暮らす
         </h1>
-        <a class="hero-link" href="">お問い合わせ</a>
+        <a class="button-primary" href="">お問い合わせ</a>
       </div>
+      <section class="our-vision container-920">
+        <div class="illustration"><img src="./images/front-page/our-vision.svg" width="420" height="297"
+            alt="コーヒーのイラスト"></div>
+        <div>
+          <p class="title-en">Our vision</p>
+          <h2 class="title-ja">その1杯が世界を変える</h2>
+          <p class="description">
+            私たちはフェアトレード・持続可能な製法によってサーブされる1杯をエシカル（Ethical・倫理的）なコーヒーと定め、一次生産者、そしてお客様の双方にとってハッピーなあり方を追求します。</p>
+        </div>
+      </section>
+      <section class="about-us container-920">
+        <div class="image"><img src="./images/front-page/about-us.jpg" width="640" height="400" alt="kaimon coffeeの店内">
+        </div>
+        <div>
+          <p class="title-en">About us</p>
+          <h2 class="title-ja">わたしたちについて</h2>
+          <p class="description">
+            kaimon coffeeはサステナブルな暮らしが根付く街、京都で生まれました。詳しくはこちらをご覧ください。</p>
+          <a class="button-primary link" href="">わたしたちについて</a>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact-inner">
+          <h2 class="title">ご相談内容を教えてください</h2>
+          <a class="button-slate" href="">お問い合わせ</a>
+        </div>
+      </section>
     </main>
     <footer class="site-footer"></footer>
   </div>

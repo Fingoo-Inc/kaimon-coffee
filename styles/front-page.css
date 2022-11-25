@@ -26,6 +26,8 @@
 }
 
 .hero .hero-link {
+  display: flex;
+  justify-content: center;
   width: fit-content;
   padding: 20px 64px;
   background-color: var(--primary);
@@ -44,6 +46,105 @@
   filter: brightness(80%);
 }
 
+/**
+ *  Our vision
+ */
+.our-vision {
+  margin-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  display: grid;
+  gap: 40px;
+}
+
+.our-vision .illustration img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.our-vision .title-en {
+  color: var(--primary);
+  line-height: 1;
+  font-size: 24px;
+}
+
+.our-vision .title-ja {
+  font-size: 28px;
+  margin-top: 16px;
+}
+
+.our-vision .description {
+  margin-top: 40px;
+}
+
+/**
+ *  About us
+ */
+
+.about-us {
+  margin-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  display: grid;
+  gap: 40px;
+}
+
+.about-us .image img {
+  border-radius: 20px;
+}
+
+.about-us .title-en {
+  color: var(--primary);
+  line-height: 1;
+  font-size: 24px;
+}
+
+.about-us .title-ja {
+  font-size: 28px;
+  margin-top: 16px;
+}
+
+.about-us .description {
+  margin-top: 40px;
+}
+
+.about-us .link {
+  margin-top: 40px;
+}
+
+/**
+ *  Contact
+ */
+
+.contact {
+  margin-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 770px;
+}
+
+.contact .contact-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--slate-50);
+  border-radius: 40px;
+  padding: 48px 20px;
+}
+
+.contact .title {
+  font-size: 20px;
+}
+
 /*--------------------------------------------------------------
 # Desktop
 --------------------------------------------------------------*/
@@ -53,9 +154,50 @@
  */
   .hero {
     padding: 48px;
+    margin: 48px 48px 0;
   }
 
   .hero .break {
     display: none;
+  }
+
+  /**
+ *  Our vision
+ */
+  .our-vision {
+    margin-top: 160px;
+    gap: 80px;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .our-vision .illustration img {
+    width: 386px;
+  }
+
+  /**
+   *  About us
+   */
+  .about-us {
+    margin-top: 160px;
+    gap: 80px;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-us .image {
+    order: 1;
+    margin-right: calc(50% - 50vw);
+  }
+
+  /**
+   *  Contact
+   */
+  .contact {
+    margin-top: 160px;
+  }
+
+  .contact .title {
+    font-size: 24px;
   }
 }

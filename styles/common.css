@@ -7,6 +7,7 @@
 }
 
 body {
+  font-size: 18px;
   color: var(--slate-600);
   line-height: 1.7;
 }
@@ -22,6 +23,10 @@ h6 {
   margin-bottom: 0;
 }
 
+.page {
+  overflow: hidden;
+}
+
 /*--------------------------------------------------------------
 # Mobile
 --------------------------------------------------------------*/
@@ -31,6 +36,9 @@ h6 {
  */
 .site-header {
   padding: 16px 8px;
+  top: 0;
+  position: sticky;
+  background-color: var(--white);
 }
 .brand {
   transition: 0.2s ease-out;
@@ -65,6 +73,51 @@ h6 {
 
 .header-links .link:active {
   filter: brightness(90%);
+}
+
+/**
+ *  Button
+ */
+.button-primary {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  padding: 20px 64px;
+  background-color: var(--primary);
+  border-radius: 12px;
+  line-height: 1;
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+.button-primary:hover {
+  filter: brightness(90%);
+}
+
+.button-primary:active {
+  filter: brightness(80%);
+}
+
+.button-slate {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  padding: 20px 64px;
+  background-color: var(--slate-600);
+  border-radius: 12px;
+  line-height: 1;
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+.button-slate:hover {
+  filter: brightness(90%);
+}
+
+.button-slate:active {
+  filter: brightness(80%);
 }
 
 /*--------------------------------------------------------------
