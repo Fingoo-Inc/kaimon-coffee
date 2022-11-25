@@ -23,10 +23,6 @@ h6 {
   margin-bottom: 0;
 }
 
-.page {
-  overflow: hidden;
-}
-
 /*--------------------------------------------------------------
 # Mobile
 --------------------------------------------------------------*/
@@ -47,7 +43,7 @@ h6 {
   margin: 0 auto;
 }
 .brand:hover {
-  opacity: 0.7;
+  filter: brightness(70%);
 }
 .header-links {
   margin-top: 4px;
@@ -73,6 +69,22 @@ h6 {
 
 .header-links .link:active {
   filter: brightness(90%);
+}
+
+/**
+ *  Footer
+ */
+.site-footer {
+  padding: 80px 20px;
+  border-top: 1px solid var(--slate-400);
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-footer .copyright {
+  color: var(--primary);
 }
 
 /**

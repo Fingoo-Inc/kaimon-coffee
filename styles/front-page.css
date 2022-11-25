@@ -51,6 +51,9 @@
  */
 .our-vision {
   margin-top: 80px;
+}
+
+.our-vision .our-vision-inner {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -86,6 +89,9 @@
 
 .about-us {
   margin-top: 80px;
+}
+
+.about-us .about-us-inner {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -124,6 +130,7 @@
 
 .contact {
   margin-top: 80px;
+  margin-bottom: 80px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -150,8 +157,8 @@
 --------------------------------------------------------------*/
 @media screen and (min-width: 768px) {
   /**
- *  Hero
- */
+   *  Hero
+   */
   .hero {
     padding: 48px;
     margin: 48px 48px 0;
@@ -162,10 +169,13 @@
   }
 
   /**
- *  Our vision
- */
+   *  Our vision
+   */
   .our-vision {
     margin-top: 160px;
+  }
+
+  .our-vision .our-vision-inner {
     gap: 80px;
     align-items: center;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -179,7 +189,11 @@
    *  About us
    */
   .about-us {
+    overflow: hidden;
     margin-top: 160px;
+  }
+
+  .about-us .about-us-inner {
     gap: 80px;
     align-items: center;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -195,6 +209,7 @@
    */
   .contact {
     margin-top: 160px;
+    margin-bottom: 80px;
   }
 
   .contact .title {

@@ -1,0 +1,72 @@
+/*--------------------------------------------------------------
+# Mobile
+--------------------------------------------------------------*/
+.page-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero-img {
+  margin-top: 32px;
+  border-radius: 20px;
+}
+
+.description {
+  margin-top: 48px;
+}
+
+.details {
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.details .detail-row {
+  display: grid;
+  padding: 24px 0;
+  grid-template-columns: 40% 60%;
+  border-bottom: 1px solid var(--slate-400);
+}
+
+.details dt {
+  color: var(--slate-400);
+}
+.google-maps {
+  margin-top: 48px;
+  height: 300px;
+}
+
+/*--------------------------------------------------------------
+# Desktop
+--------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  .page-title {
+    margin-top: 64px;
+    font-size: 40px;
+  }
+
+  .hero-img {
+    margin-top: 64px;
+  }
+
+  .details {
+    font-size: 18px;
+  }
+
+  .details .detail-row {
+    padding: 48px 0;
+  }
+
+  .google-maps {
+    height: 500px;
+  }
+}
