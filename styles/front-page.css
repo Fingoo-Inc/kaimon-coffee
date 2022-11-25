@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+# Mobile
+--------------------------------------------------------------*/
+
+/**
+ *  Hero
+ */
+.hero {
+  background-image: url("../images/front-page/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0 20px 0;
+  border-radius: 20px;
+  height: 500px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.hero .hero-title {
+  font-weight: bold;
+  color: var(--white);
+  font-size: 40px;
+}
+
+.hero .hero-link {
+  width: fit-content;
+  padding: 20px 64px;
+  background-color: var(--primary);
+  border-radius: 12px;
+  line-height: 1;
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+.hero .hero-link:hover {
+  filter: brightness(90%);
+}
+
+.hero .hero-link:active {
+  filter: brightness(80%);
+}
+
+/*--------------------------------------------------------------
+# Desktop
+--------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  /**
+ *  Hero
+ */
+  .hero {
+    padding: 48px;
+  }
+
+  .hero .break {
+    display: none;
+  }
+}
