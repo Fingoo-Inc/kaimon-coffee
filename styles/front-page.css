@@ -125,6 +125,55 @@
 }
 
 /**
+ *  Beverage
+ */
+.beverage {
+  margin-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--slate-100);
+}
+
+.beverage .beverage-inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+
+.beverage .title-en {
+  color: var(--primary);
+  line-height: 1;
+  font-size: 24px;
+}
+
+.beverage .title-ja {
+  font-size: 28px;
+  margin-top: 16px;
+}
+
+.beverage .beverage-list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 20px;
+}
+
+.beverage .beverage-item .beverage-item-image {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.beverage .beverage-item .beverage-item-title {
+  margin-top: 8px;
+}
+
+.beverage .beverage-item .beverage-item-price {
+  font-weight: bold;
+}
+
+/**
  *  Contact
  */
 
@@ -205,11 +254,45 @@
   }
 
   /**
+   *  Beverage
+   */
+  .beverage {
+    margin-top: 160px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .beverage .title-ja {
+    font-size: 28px;
+    margin-top: 16px;
+  }
+
+  .beverage .beverage-list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  .beverage .beverage-item .beverage-item-image {
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .beverage .beverage-item .beverage-item-title {
+    margin-top: 8px;
+  }
+
+  .beverage .beverage-item .beverage-item-price {
+    font-weight: bold;
+  }
+
+  /**
    *  Contact
    */
   .contact {
     margin-top: 160px;
-    margin-bottom: 80px;
+    margin-bottom: 160px;
   }
 
   .contact .title {
